@@ -2,12 +2,168 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Resume Builder</title>
   </head>
+  <header class="header">
+    <h1>Resume Builder</h1>
+    <button>Download</button>
+  </header>
   <body>
-    <div id="app"></div>
+    <div class="grid-container">
+      <div class="card col-1 row-4" id="image-showcase"></div>
+      <div class="card text-card col-1 row-4" id="greeting-box">
+        <div class="greeting">Hello&#x1f44b;&#x1f3fb; I'm</div>
+        <div id="name-title">
+          <div class="name">Karthik SR</div>
+          <div class="role">UI/UX Designer</div>
+        </div>
+      </div>
+      <div class="card text-card col-2 row-4" id="languages">
+        <section>
+          <h2>Languages</h2>
+          <ul class="languages-graph">
+            <li class="language-skill">
+              <label class="language-name">English</label>
+              <progress class="language-level" value="100" max="100"></progress>
+            </li>
+            <li class="language-skill">
+              <label class="language-name">Malayalam</label>
+              <progress class="language-level" value="100" max="100"></progress>
+            </li>
+            <li class="language-skill">
+              <label class="language-name">Hindi</label>
+              <progress class="language-level" value="80" max="100"></progress>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="card text-card col-3 row-12" id="experience">
+        <h2>Experience</h2>
+        <ol>
+          <li class="text-card inner-card active-card">
+            <div class="experience-time">
+              <span>Jun. 2023 - Present</span>
+              <span class="recent">most recent</span>
+            </div>
+            <div class="experience-info">
+              <div class="experience-title">
+                <h3>Marketing Manager</h3>
+                <h4>Pankayam | Full-time</h4>
+              </div>
+              <ul class="experience-description">
+                <li>Strategy development and planning of campaigns that promote the business and generate genuine traffic</li>
+                <li>SEO Content Creation for Blogs, Website, Social media</li>
+              </ul>
+            </div>
+          </li>
+          <li class="text-card inner-card">
+            <div class="experience-time">
+              2017 - Present
+            </div>
+            <div class="experience-info">
+              <div class="experience-title">
+                <h3>Graphic | Web Designer</h3>
+                <h4>Freelance</h4>
+              </div>
+              <ul class="experience-description">
+                <li>Development of internal projects from scratch, product design of brands</li>
+                <li>Landing page, webapps and hybrid apps</li>
+                <li>Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="text-card inner-card">
+            <div class="experience-time">
+              Sep. 2021 - Jun. 2023
+            </div>
+            <div class="experience-info">
+              <div class="experience-title">
+                <h3>Legal Assistant</h3>
+                <h4>Law Firm | Intern</h4>
+              </div>
+              <ul class="experience-description">
+                <li>Provide administrative support to lawyer and enhance office effectiveness</li>
+                <li>Handle communication with clients, witnesses etc</li>
+                <li>Prepare case briefs and summarize depositions, interrogatories and testimony</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="card text-card col-1 row-12" id="tools">
+        <h2>Tools</h2>
+        <div class="tools-box">
+          <div id="icons-showcase-1" class="icons-showcase">
+            "<div class='icons-title'>design</div>"
+          </div>
+          <div id="icons-showcase-2" class="icons-showcase">
+            <p class="icons-title">no-code</p>
+          </div>
+          <div id="icons-showcase-3" class="icons-showcase">
+            <p class="icons-title">artificial intelligence</p>
+          </div>
+        </div>
+      </div>
+      <div class="card text-card col-2 row-8" id="education">
+        <h2>Education</h2>
+        <div class="education-cards">
+          <div class="education-card inner-card text-card active-card">
+            <h4>2023</h4>
+            <div class="education-info">
+              <h3>UI/UX</h3>
+              <div class="tags">
+                &#x23;UX &#x23;UI &#x23;research &#x23;DesignSystem &#x23;Ui &#x23;wireframing &#x23;figma &#x23;Ux
+              </div>
+            </div>
+            <div>Coursera</div>
+          </div>
+          <div class="education-card inner-card text-card">
+            <h4>2017 - 2022</h4>
+            <div class="education-info">
+              <h3>Law</h3>
+              <div class="tags">&#x23;law &#x23;legalStudies &#x23;contracts &#x23;internationalLaws</div>
+            </div>
+            <div>University of Kerala</div>
+          </div>
+          <div class="education-card inner-card text-card">
+            <h4>2017</h4>
+            <div class="education-info">
+              <h3>Graphic Designer</h3>
+              <div class="tags">&#x23;branding &#x23;web &#x23;illustration &#x23;adobe</div>
+            </div>
+            <div>Coursera</div>
+          </div>
+        </div>
+      </div>
+      <div class="card text-card col-2 row-5" id="interests">
+        <h2>Interests</h2>
+        <div class="interests-grid">
+          <div class="interest-name">branding</div>
+          <div class="interest-name">design</div>
+          <div class="interest-name">photography</div>
+          <div class="interest-name">artificial intelligence</div>
+          <div class="interest-name">illustration</div>
+          <div class="interest-name">typography</div>
+          <div class="interest-name">social networks</div>
+          <div class="interest-name">research</div>
+          <div class="interest-name">dron pilot</div>
+          <div class="interest-name">games</div>
+        </div>
+      </div>
+      <div class="card text-card col-2 row-3" id="contacts-box">
+        <h2>Let's chat I'm ready to work on exciting projects</h2>
+        <div class="contacts">
+          srkarthik.designscape@gmail.com
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

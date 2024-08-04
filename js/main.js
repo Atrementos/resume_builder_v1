@@ -1,24 +1,38 @@
 import '../css/style.css'
-import javascriptLogo from '../javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import profileImg from '/profile.png'
+import figmaIcon from '/figma.png'
+import photoshopIcon from '/Adobe_Photoshop.png'
+import illustratorIcon from '/Adobe_Illustrator.png'
+import PremiereIcon from '/Adobe_Premiere.png'
+import notionIcon from '/Notion.png'
+import googleMeetIcon from '/google_meet.png'
+import zapierIcon from '/zapier.png'
+import webflowIcon from '/webflow.png'
+import framerIcon from '/framer.svg'
+import wordpressIcon from '/wordpress.png'
+import chatgptIcon from '/chatgpt.jpg'
+import copilotIcon from '/copilot.jpg'
+import midjourneyIcon from '/midjourney.png'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+document.getElementById("image-showcase").innerHTML = `<img id="profile-image" src="${profileImg}" alt="Profile photo">`
 
-setupCounter(document.querySelector('#counter'))
+const icons1 = [figmaIcon, photoshopIcon, illustratorIcon, PremiereIcon, notionIcon, googleMeetIcon]
+let showcase1 = "<div class='icons-title'>design</div>"
+for (const icon of icons1) {
+    showcase1 = showcase1.concat(`<img src="${icon}">`)
+}
+document.getElementById("icons-showcase-1").innerHTML = showcase1
+
+const icons2 = [zapierIcon, webflowIcon, framerIcon, wordpressIcon]
+let showcase2 = "<div class='icons-title'>no-code</div>"
+for (const icon of icons2) {
+    showcase2 = showcase2.concat(`<img src="${icon}">`)
+}
+document.getElementById("icons-showcase-2").innerHTML = showcase2
+
+const icons3 = [chatgptIcon, copilotIcon, midjourneyIcon]
+let showcase3 = "<div class='icons-title'>artificial intelligence</div>"
+for (const icon of icons3) {
+    showcase3 = showcase3.concat(`<img src="${icon}">`)
+}
+document.getElementById("icons-showcase-3").innerHTML = showcase3
