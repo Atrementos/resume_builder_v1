@@ -36,3 +36,17 @@ for (const icon of icons3) {
     showcase3 = showcase3.concat(`<img src="${icon}">`)
 }
 document.getElementById("icons-showcase-3").innerHTML = showcase3
+
+const resumeContainer = document.getElementById("main-grid")
+// const pdf = new jsPDF()
+
+const downloadButton = document.getElementById("download-button")
+downloadButton.addEventListener('click', () => {
+    const opt = {
+        jsPDF: {
+            unit: 'px',
+            format: [resumeContainer.offsetWidth, resumeContainer.offsetHeight + 100]
+        }
+    }
+    html2pdf().from(resumeContainer).set(opt).save("resume")
+})

@@ -61,16 +61,11 @@ h2 {
 
 .card {
   background-color: #F0F0F0;
-  border: 2px solid transparent;
   border-radius: 30px;
 }
 
 .text-card {
-  padding: 20px;
-}
-
-.card:hover {
-  border-color: #cfa6a6;
+  padding: 22px;
 }
 
 .card img {
@@ -322,10 +317,6 @@ h4 {
   grid-column: span 3;
 }
 
-.row-2 {
-  grid-row: span 2;
-}
-
 .row-3 {
   grid-row: span 3;
 }
@@ -340,10 +331,6 @@ h4 {
 
 .row-8 {
   grid-row: span 8;
-}
-
-.row-11 {
-  grid-row: span 11;
 }
 
 .row-12 {
@@ -362,37 +349,3 @@ h4 {
     background-color: #f9f9f9;
   }
 }
-
-/* @media only screen and (max-width: 600px) {
-  .grid-container {
-    width: 400;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 40px;
-    gap: 10px;
-  }
-
-  .card {
-    padding: 12px;
-    background-color: gray;
-    border-radius: 15px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .grid-container {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 48px;
-    gap: 30px;
-    width: 1200px;
-  }
-
-  .card {
-    padding: 24px;
-    background-color: gray;
-    border-radius: 30px;
-  }
-} */
